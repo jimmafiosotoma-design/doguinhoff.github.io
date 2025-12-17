@@ -1,1 +1,102 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doguinho FF — Validar KEY</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #c68642, #000000);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+    .card {
+      background: #0e0e0e;
+      border-radius: 20px;
+      padding: 30px 25px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.6);
+      border: 2px solid #c68642;
+    }
+    .logo {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #f5c77a;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.85;
+      margin-bottom: 25px;
+    }
+    label {
+      font-size: 14px;
+      margin-bottom: 6px;
+      display: block;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      border: none;
+      background: linear-gradient(135deg, #f5c77a, #c68642);
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .info {
+      margin-top: 15px;
+      font-size: 12px;
+      text-align: center;
+      opacity: 0.8;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 11px;
+      text-align: center;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">🐶 DOGUINHO FF</div>
+    <div class="subtitle">Validação de KEY — Acesso VIP</div><label for="key">Digite sua KEY</label>
+<input type="text" id="key" placeholder="Ex: DGFF-9A1K-XY72" />
 
+<button onclick="validarKey()">VALIDAR KEY</button>
+
+<div class="info">Sem hack • Sem APK • Sem risco de ban</div>
+<div class="footer">© Doguinho FF — Auxílio Oficial</div>
+
+  </div>  <script>
+    function validarKey() {
+      const key = document.getElementById('key').value;
+      if (!key) {
+        alert('Digite uma KEY válida');
+        return;
+      }
+      // Aqui você pode integrar com Google Sheets, Firebase ou backend
+      alert('KEY enviada para validação!');
+    }
+  </script></body>
+</html>
